@@ -1,0 +1,3 @@
+FROM alpine:3.12
+LABEL maintainer="Ferdinand Prantl <prantlf@gmail.com>"
+RUN apk --no-cache add make gcc g++ musl-dev
