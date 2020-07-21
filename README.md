@@ -39,7 +39,7 @@ Remove an old local image:
 
     make clean
 
-Check the `Dockerfile`:
+Check the `Dockerfiles`:
 
     make lint
 
