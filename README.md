@@ -1,10 +1,10 @@
 # prantlf/alpine-make-gcc
 
-[Docker] image: Make, gcc, g++ and musl library for development on Alpine Linux
+[Docker] image: Make, gcc, binutils, autoconf, musl and other tools for compiling packages on Alpine Linux
 
 [![prantlf/alpine-make-gcc](http://dockeri.co/image/prantlf/alpine-make-gcc)](https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc/)
 
-[This image] is supposed to build C and C++ sources into an output usable on [Alpine Linux]. This image is built automatically on the top of the tag `latest` from the [Alpine repository], so that it is always based on the latest [Alpine Linux]. Packages `make`, `gcc`, `g++` and `musl-dev` have to be updated from time to time by triggering a new build manually.
+[This image] is supposed to build C and C++ sources into an output usable on [Alpine Linux]. This image is built automatically on the top of the tag `latest` from the [Alpine repository], so that it is always based on the latest [Alpine Linux]. Packages `make`, `gcc`, `g++`, `musl-dev`, `binutils`, `autoconf`, `automake`, `libtool`, `pkgconfig`, `check-dev`, `file` nad `patch` have to be updated from time to time by triggering a new build manually.
 
 ## Tags
 
