@@ -8,8 +8,7 @@
 
 ## Tags
 
-- [`latest`]
-- [`3.12`]
+- [`latest`], `3.13`, `3.12`
 
 ## Install
 
@@ -35,39 +34,27 @@ Typically, you will use this image as the first image in a multi-stage image bui
 
 The local image is built as `alpine-make-gcc` and pushed to the docker hub as `prantlf/alpine-make-gcc:3.12` and `prantlf/alpine-make-gcc:latest`.
 
-Remove an old local image:
-
+    # Remove an old local image:
     make clean
-
-Check the `Dockerfiles`:
-
+    # Check the `Dockerfiles`:
     make lint
-
-Build a new local image:
-
+    # Build a new local image:
     make build
-
-Enter an interactive shell inside the created image:
-
+    # Enter an interactive shell inside the created image:
     make run
-
-Login to the docker hub:
-
+    # Login to the docker hub:
     make login
-
-Push the local image to the docker hub:
-
+    # Push the local image to the docker hub:
     make push
 
 ## License
 
-Copyright (c) 2020 Ferdinand Prantl
+Copyright (c) 2020-2021 Ferdinand Prantl
 
 Licensed under the MIT license.
 
 [Docker]: https://www.docker.com/
 [This image]: https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc
 [`latest`]: https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc/tags
-[`3.12`]: https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc/tags
 [Alpine repository]: https://hub.docker.com/_/alpine
 [Alpine Linux]: https://alpinelinux.org/
