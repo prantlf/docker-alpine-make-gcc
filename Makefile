@@ -9,7 +9,7 @@ lint ::
 
 build ::
 	docker build -t alpine-make-gcc -f Dockerfile .
-	docker tag alpine-make-gcc prantlf/alpine-make-gcc:latest
+	docker tag alpine-make-gcc prantlf/alpine-make-gcc:3.14
 
 run ::
 	docker run --rm -it alpine-make-gcc busybox sh
@@ -18,4 +18,4 @@ login ::
 	docker login --username=prantlf
 
 push ::
-	docker push prantlf/alpine-make-gcc:latest
+	docker push prantlf/alpine-make-gcc:3.14
