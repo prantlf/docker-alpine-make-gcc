@@ -5,7 +5,7 @@ services:
 variables:
   IMAGE_VER: latest
   GITLAB_TAG: $CI_REGISTRY_IMAGE:$IMAGE_VER
-  HUB_TAG: prantlf/alpine-make-gcc$IMAGE_VER
+  HUB_TAG: prantlf/alpine-make-gcc:$IMAGE_VER
 
 build:
   script:
