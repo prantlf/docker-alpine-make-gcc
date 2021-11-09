@@ -6,6 +6,8 @@
 
 [This image] is supposed to build C and C++ sources into an output usable on [Alpine Linux]. This image is built automatically on the top of the tag `latest` from the [Alpine repository], so that it is always based on the latest [Alpine Linux]. Packages `make`, `gcc`, `g++`, `musl-dev`, `binutils`, `autoconf`, `automake`, `libtool`, `pkgconfig`, `check-dev`, `file` nad `patch` have to be updated from time to time by triggering a new build manually.
 
+If you have trouble pulling the image from the Docker's default hub.docker.com, try gitlab.com, where [this project] is primarily maintained: `registry.gitlab.com/prantlf/docker-alpine-make-gcc`.
+
 ## Tags
 
 - [`latest`], `3.14`, `3.13`, `3.12`
@@ -55,6 +57,7 @@ Licensed under the MIT license.
 
 [Docker]: https://www.docker.com/
 [This image]: https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc
+[this project]: https://gitlab.com/prantlf/docker-alpine-make-gcc#prantlfalpine-make-gcc
 [`latest`]: https://hub.docker.com/repository/docker/prantlf/alpine-make-gcc/tags
 [Alpine repository]: https://hub.docker.com/_/alpine
 [Alpine Linux]: https://alpinelinux.org/
