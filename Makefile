@@ -1,5 +1,5 @@
 clean ::
-	docker image rm alpine-make-gcc
+	docker image rm alpine-make-gcc:3.15
 
 lint ::
 	docker run --rm -i \
@@ -8,14 +8,14 @@ lint ::
 		< Dockerfile
 
 build ::
-	docker build -t alpine-make-gcc -f Dockerfile .
-	docker tag alpine-make-gcc prantlf/alpine-make-gcc:latest
+	docker build -t alpine-make-gcc:3.15 .
+	docker tag alpine-make-gcc:3.15 prantlf/alpine-make-gcc:3.15
 
 run ::
-	docker run --rm -it alpine-make-gcc busybox sh
+	docker run --rm -it alpine-make-gcc:3.15 busybox sh
 
 login ::
 	docker login --username=prantlf
 
 push ::
-	docker push prantlf/alpine-make-gcc:latest
+	docker push prantlf/alpine-make-gcc:3.15

@@ -10,7 +10,7 @@ If you have trouble pulling the image from the Docker's default hub.docker.com, 
 
 ## Tags
 
-- [`latest`], `3.14`, `3.13`, `3.12`
+- [`latest`], `3.15`, `3.14`, `3.13`, `3.12`
 
 ## Install
 
