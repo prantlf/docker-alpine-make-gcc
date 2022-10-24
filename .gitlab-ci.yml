@@ -18,3 +18,5 @@ build:
     - docker push $GITLAB_TAG
     - echo -n "$DOCKER_TOKEN" | docker login -u prantlf --password-stdin
     - docker push $HUB_TAG
+  except:
+    - tags
